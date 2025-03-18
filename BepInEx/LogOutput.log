@@ -1,0 +1,78 @@
+[Message:   BepInEx] BepInEx 5.4.23.2 - Spiritfarer (17.03.2025 22:05:06)
+[Info   :   BepInEx] Running under Unity v2020.3.33.9525882
+[Info   :   BepInEx] CLR runtime version: 4.0.30319.42000
+[Info   :   BepInEx] Supports SRE: True
+[Info   :   BepInEx] System platform: Bits64, Windows
+[Message:   BepInEx] Preloader started
+[Info   :   BepInEx] Loaded 1 patcher method from [BepInEx.Preloader 5.4.23.2]
+[Info   :   BepInEx] 1 patcher plugin loaded
+[Info   :   BepInEx] Patching [UnityEngine.CoreModule] with [BepInEx.Chainloader]
+[Message:   BepInEx] Preloader finished
+[Message:   BepInEx] Chainloader ready
+[Message:   BepInEx] Chainloader started
+[Info   :   BepInEx] 2 plugins to load
+[Info   :   BepInEx] Loading [XUnity Auto Translator 5.4.4]
+[Info   :XUnity.AutoTranslator] Version of TextMesh Pro: 1.4.0.
+[Error  :XUnity.AutoTranslator] An error occurred during while saving configuration.
+System.UnauthorizedAccessException: Access to the path "Y:\SteamLibrary\steamapps\common\Kami\BepInEx\config\AutoTranslatorConfig.ini" is denied.
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options, System.String msgPath, System.Boolean bFromProxy, System.Boolean useLongPath, System.Boolean checkHost) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions,string,bool,bool,bool)
+  at System.IO.StreamWriter.CreateFile (System.String path, System.Boolean append, System.Boolean checkHost) [0x0001c] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize, System.Boolean checkHost) [0x00055] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at ExIni.IniFile.Save (System.String filePath) [0x00022] in <3154fede4156477faa201ec0a1929665>:0 
+  at XUnity.AutoTranslator.Plugin.BepInEx.AutoTranslatorPlugin.SaveConfig () [0x00000] in <c78167cccc2249f88cf07f304b7273c4>:0 
+  at XUnity.AutoTranslator.Plugin.Core.Configuration.Settings.Save () [0x00000] in <e9af143dffa24a9ca81195da5bc2ddf2>:0 
+[Warning:  HarmonyX] AccessTools.Method: Could not find method for type TMPro.TMP_Text and name SetCharArray and parameters (int[], int, int)
+[Warning:XUnity.AutoTranslator] Could not hook 'TMP_Text_SetCharArray_Hook3'. Likely due differences between different versions of the engine or text framework.
+[Error  :XUnity.AutoTranslator] Error occurred during the initialization of the selected translate endpoint.
+XUnity.AutoTranslator.Plugin.Core.Endpoints.EndpointInitializationException: The destination language 'ua' is not supported.
+  at GoogleTranslate.GoogleTranslateEndpointV2.Initialize (XUnity.AutoTranslator.Plugin.Core.Endpoints.IInitializationContext context) [0x0014c] in <59349c9968dc456b837942c1b7029ace>:0 
+  at XUnity.AutoTranslator.Plugin.Core.TranslationManager.AddEndpoint (XUnity.AutoTranslator.Plugin.Core.Web.HttpSecurity httpSecurity, System.Type type) [0x0003d] in <e9af143dffa24a9ca81195da5bc2ddf2>:0 
+[Error  :XUnity.AutoTranslator] An error occurred during while saving configuration.
+System.UnauthorizedAccessException: Access to the path "Y:\SteamLibrary\steamapps\common\Kami\BepInEx\config\AutoTranslatorConfig.ini" is denied.
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options, System.String msgPath, System.Boolean bFromProxy, System.Boolean useLongPath, System.Boolean checkHost) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions,string,bool,bool,bool)
+  at System.IO.StreamWriter.CreateFile (System.String path, System.Boolean append, System.Boolean checkHost) [0x0001c] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize, System.Boolean checkHost) [0x00055] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at ExIni.IniFile.Save (System.String filePath) [0x00022] in <3154fede4156477faa201ec0a1929665>:0 
+  at XUnity.AutoTranslator.Plugin.BepInEx.AutoTranslatorPlugin.SaveConfig () [0x00000] in <c78167cccc2249f88cf07f304b7273c4>:0 
+  at XUnity.AutoTranslator.Plugin.Core.Configuration.Settings.Save () [0x00000] in <e9af143dffa24a9ca81195da5bc2ddf2>:0 
+[Info   :XUnity.AutoTranslator] Loaded XUnity.AutoTranslator into Unity [2020.3.33f1] game.
+[Info   :   BepInEx] Loading [XUnity Resource Redirector 2.1.0]
+[Message:   BepInEx] Chainloader startup complete
+[Info   :XUnity.AutoTranslator] Skipping plugin scan because no plugin-specific translations has been registered.
+[Error  :XUnity.AutoTranslator] An error occurred during while saving configuration.
+System.UnauthorizedAccessException: Access to the path "Y:\SteamLibrary\steamapps\common\Kami\BepInEx\config\AutoTranslatorConfig.ini" is denied.
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options, System.String msgPath, System.Boolean bFromProxy, System.Boolean useLongPath, System.Boolean checkHost) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions,string,bool,bool,bool)
+  at System.IO.StreamWriter.CreateFile (System.String path, System.Boolean append, System.Boolean checkHost) [0x0001c] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize, System.Boolean checkHost) [0x00055] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at ExIni.IniFile.Save (System.String filePath) [0x00022] in <3154fede4156477faa201ec0a1929665>:0 
+  at XUnity.AutoTranslator.Plugin.BepInEx.AutoTranslatorPlugin.SaveConfig () [0x00000] in <c78167cccc2249f88cf07f304b7273c4>:0 
+  at XUnity.AutoTranslator.Plugin.Core.Configuration.Settings.Save () [0x00000] in <e9af143dffa24a9ca81195da5bc2ddf2>:0 
+[Info   :XUnity.AutoTranslator] Attempting to load TextMesh Pro font from asset bundle.
+[Info   :XUnity.AutoTranslator] Loaded TextMesh Pro font uses version: 1.1.0
+[Warning:XUnity.AutoTranslator] TextMesh Pro version mismatch. Font asset version: 1.1.0, TextMesh Pro version: 1.4.0
+[Info   :   Console] [WARNING] No Action exists for Action Id 66. You can create Actions in the editor.
+[Info   :   Console] Rewired is not initialized. Do you have a Rewired Input Manager in the scene and enabled?
+------- Rewired System Info -------
+Unity version: 2020.3.33f1
+Rewired version: 1.1.40.0.U2020
+Platform: Windows
+Using Unity input: False
+
